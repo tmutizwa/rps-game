@@ -1,0 +1,35 @@
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+.rps {
+  text-align: center;
+    background:#444;
+    color: #cccccc;
+    height: 100vh;
+}
+.rps section{
+  text-align: left;
+}
+
+.rps-header {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.rps-title {
+  font-size: 1.5em;
+}
+
+.rps-intro {
+  font-size: large;
+
+}
+
+@keyframes rps-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

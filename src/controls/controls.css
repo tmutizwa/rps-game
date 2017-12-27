@@ -1,0 +1,21 @@
+.controls {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+.controls  li {
+    border: solid 1px #ccc;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.controls li:hover {
+    transform: scale(1.1);
+}
+
+.controls li button {
+    display: block;
+    border-radius: 10px;
+}
