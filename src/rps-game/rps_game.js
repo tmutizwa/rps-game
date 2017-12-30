@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Controls from '../controls/controls';
 import Displays from '../displays/displays';
 import paperImg from './img/paper.jpg';
@@ -6,7 +6,7 @@ import rockImg from './img/rock.png';
 import scissorsImg from './img/scissors.png';
 import './rps_game.css';
 
-class RpsGame extends React.Component {
+class RpsGame extends Component {
     constructor (){
         super();
 
@@ -21,14 +21,14 @@ class RpsGame extends React.Component {
     }
 
     onPlay(player1Move) {
-        const computerMove = this.computerPlay();
+        const computerMoveId = this.computerPlay();
+        const computerMove = this.controls.find((control) => control.id === computerMoveId);
         const winner = this.getWinner(player1Move, computerMove);
         this.setState({player1Move, computerMove, winner});
     }
 
     computerPlay() {
-        const move = Math.floor(Math.random() * 3) + 1;
-        return this.controls.find((control) => control.id === move);
+        return Math.floor(Math.random() * 3) + 1;
     }
 
     getWinner(player1Move, computerMove) {
