@@ -71,7 +71,3 @@ class RpsGame extends Component {
 }
 
 export default RpsGame;
-
-const Main = styled.div`
-  width: 800px;
-`;
