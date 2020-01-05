@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 
 import Controls from "../controls/controls";
 import Displays from "../displays/displays";
