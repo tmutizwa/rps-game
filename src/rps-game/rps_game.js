@@ -51,17 +51,19 @@ class RpsGame extends Component {
         <header className="rps-header">
           <h1 className="rps-title">Rock Paper Scissors - The Game</h1>
         </header>
-        <section>
+        <section className="container">
           <div className="row">
-            <Controls
-              onPlay={this.onPlay.bind(this)}
-              controls={this.controls}
-            />
-            <Displays
-              player1={this.state.player1Move}
-              computer={this.state.computerMove}
-              winner={this.state.winner}
-            />
+            <div className="col-md-12">
+              <Controls
+                onPlay={this.onPlay.bind(this)}
+                controls={this.controls}
+              />
+              <Displays
+                player1={this.state.player1Move}
+                computer={this.state.computerMove}
+                winner={this.state.winner}
+              />
+            </div>
           </div>
         </section>
       </div>
